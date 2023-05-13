@@ -1,0 +1,26 @@
+<div class="box1 d-flex flex-column align-items-center ">
+    <div class="app">The Weather App</div>
+    <div *ngIf="spin" class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    <div *ngIf="!spin && !error">
+        <div class='temp d-flex align-items-center justify-content-center'>{{Temp}}° Celcius</div>
+        <div class='city'>{{Ci}}</div>
+    </div>
+    <div *ngIf="error">Enter Valid City</div>
+
+</div>
+<div class='box2 d-flex align-items-center justify-content-center flex-row'>
+    <form class='box3 d-flex align-items-center' [formGroup]="cityForm">
+        <input type='text' name='city' placeholder='Enter city' formControlName="cityName" [(ngModel)]="City" />
+        <div class="errorMessage"
+            *ngIf="cityForm.get('cityName')?.touched&&cityForm.get('cityName')?.hasError('required')">Please Enter City
+        </div>
+        <div class="errorMessage"
+            *ngIf="cityForm.get('cityName')?.touched&&cityForm.get('cityName')?.hasError('pattern')">Enter Valid City
+        </div>
+    </form>
+    <button (click)="handleClimate()">Get Weather</button>
+</div>
+
+    <img src="../assets/weather-illustration.png">
