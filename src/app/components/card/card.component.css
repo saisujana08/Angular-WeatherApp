@@ -1,18 +1,25 @@
 .errorMessage{
     color: red;
+    /* top: 750px;
+    left: 65px;
+    position: absolute;
+    font-size: 18px; */
 
 }
 .box1 {
-    height: 324px;
+    /* height: 324px;
     width: 660px;
     left: 60px;
-    top: 294px;
+    top: 294px; */
     border-radius: 10px;
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     /* display: flex;
     flex-direction: column;
     align-items: center; */
+}
+.left-column{
+    margin: auto;
 }
 
 .app {
@@ -23,20 +30,20 @@
     line-height: 54px;
     letter-spacing: 0em;
     color: #4B77BE;
-    height: 54px;
+    /* height: 54px;
     width: 320px;
     left: 230px;
-    top: 342px;
+    top: 342px; */
     border-radius: nullpx;
 
 }
 
 .temp {
     margin-top: 24px;
-    height: 72px;
+    /* height: 72px;
     width: 286px;
     left: 247px;
-    top: 420px;
+    top: 420px; */
     border-radius: nullpx;
     /* display: flex;
     align-items: center;
@@ -51,10 +58,10 @@
 
 .city {
     margin-top: 24px;
-    height: 54px;
+    /* height: 54px;
     width: 303px;
     left: 239px;
-    top: 516px;
+    top: 516px; */
     border-radius: nullpx;
     font-family: Poppins;
     font-size: 36px;
@@ -66,13 +73,14 @@
 }
 
 .box2 {
-    height: 96px;
+    /* height: 96px;
     width: 660px;
     left: 60px;
-    top: 634px;
+    top: 634px; */
     border-radius: 10px;
     background-color: white;
-    position: absolute;
+    margin-top: 30px;
+    /* position: absolute; */
     /* display: flex;
     align-items: center;
     flex-direction: row;
@@ -81,10 +89,10 @@
 
 .box3 {
     margin: 16px;
-    height: 64px;
+    /* height: 64px;
     width: 408px;
     left: 76px;
-    top: 650px;
+    top: 650px; */
     border-radius: 5px;
     border: 1px black solid;
     /* display: flex;
@@ -92,7 +100,7 @@
 }
 
 .box3 input {
-    margin-left: 16px;
+    /* margin-left: 16px; */
     border: none;
     font-family: Poppins;
     font-style: regular;
@@ -101,7 +109,7 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .box3 input:focus {
@@ -114,10 +122,10 @@
 
 button {
     margin-right: 16px;
-    height: 64px;
+    /* height: 64px;
     width: 204px;
     left: 500px;
-    top: 650px;
+    top: 650px; */
     border-radius: 5px;
     font-family: Poppins;
     font-size: 21px;
@@ -138,18 +146,19 @@ button {
 }
 
 img {
-    height: 406.4400634765625px;
+    /* height: 406.4400634765625px;
     width: 549.6802978515625px;
     left: 830px;
-    top: 309px;
+    top: 309px; */
     border-radius: 0px;
-    position: absolute;
+    margin-top: 20px;
+    /* position: absolute; */
 }
 
 
 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .box1 {
         height: 270px;
         width: 358px;
@@ -242,4 +251,4 @@ img {
     }
 
     
-}
+} */
