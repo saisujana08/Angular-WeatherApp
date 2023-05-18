@@ -1,24 +1,24 @@
-<div class="row">
+<div class="row d-flex align-items-center">
     <div class="col-12 col-md-6 ">
-        <div class="box1 text-center rounded-4">
-            <div class="app">The Weather App</div>
+        <div class="p-3 bg-white text-center rounded-4">
+            <div class="fs-2 fw-bold" style="color: #4B77BE;font-family: Poppins;">The Weather App</div>
             <div *ngIf="spin" class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             <div *ngIf="!spin && !error">
-                <div class='temp text-center'>{{Temp}}° Celcius</div>
-                <div class='city'>{{Ci}}</div>
+                <div class='mt-3 text-center fs-1 fw-bold' style="font-family: Poppins;">{{Temp}}° Celcius</div>
+                <div class='city fs-2 mt-3 fw-bold' style="color: #4B77BE;font-family: Poppins;">{{Ci}}</div>
             </div>
         </div>
 
-        <div class='box2 d-flex align-items-center justify-content-center rounded-3'>
+        <div class='p-3 mt-4 d-flex align-items-center justify-content-center rounded-4 bg-white'>
 
             <div>
-                <form class='box3 d-flex align-items-center rounded-3' [formGroup]="cityForm">
-                    <input  class="form-control text-start" type='text' name='city'
+                <form class='d-flex align-items-center rounded-3 fw-normal border border-dark' style="font-family: Poppins;" [formGroup]="cityForm">
+                    <input  class="form-control text-start fs-6" type='text' name='city'
                         placeholder='Enter city' formControlName="cityName" />
                 </form>
-                <div class=" align-baseline text-danger"
+                <div class="text-danger"
                     *ngIf="!error&&cityForm.get('cityName')?.touched&&cityForm.get('cityName')?.hasError('required')">
                     Please
                     Enter
@@ -34,7 +34,7 @@
             </div>
 
             <div>
-                <button [disabled]="!cityForm.valid" (click)="handleClimate(this.cityForm.value.cityName!)">Get Weather</button>
+                <button class="fs-5 fw-bold text-white rounded" style="background: #4B77BE;font-family: Poppins;margin-left: 16px;cursor: pointer;" [disabled]="!cityForm.valid" (click)="handleClimate(this.cityForm.value.cityName!)">Get Weather</button>
             </div>
 
         </div>
@@ -42,7 +42,7 @@
 
     </div>
     <div class="col-12 col-md-6 d-flex justify-content-center">
-        <img class="img-fluid" src="../assets/weather-illustration.png">
+        <img class="img-fluid mt-2" src="../assets/weather-illustration.png">
     </div>
 
 </div>
